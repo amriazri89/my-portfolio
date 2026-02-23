@@ -51,7 +51,7 @@ export default function App() {
             <Experience data={d.experience} />
           </section>
 
-          {/* Featured Project */}
+          {/* Featured Project testtt*/}
           <section className={styles.section} aria-label="Featured Projects">
             <SectionTitle>Featured Project</SectionTitle>
             {d.projects.map((p, i) => (
@@ -84,7 +84,7 @@ export default function App() {
         >
           ⬇ Resume PDF
         </button>
-        <button
+        {/* <button
           className={styles.printBtn}
           onClick={handleDownload}
           disabled={loading}
@@ -96,7 +96,7 @@ export default function App() {
           onClick={() => window.print()}
         >
           🖨 Print
-        </button>
+        </button> */}
       </div>
     </div>
   );
