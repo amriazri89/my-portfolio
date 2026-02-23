@@ -1,0 +1,136 @@
+.printBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm 14mm;
+  }
+
+  .page {
+    max-width: 100%;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .body {
+    grid-template-columns: 1fr 220px;
+  }
+
+  .main { padding: 0 24px 0 0; border-right: 1px solid #e2e8f0; }
+  .sidebar { padding: 0 0 0 20px; background: white; }
+  .printBar { display: none; }
+}
+
+.page {
+  max-width: 900px;
+  margin: 24px auto;
+  background: var(--white);
+  border-radius: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,.07), 0 20px 60px -10px rgba(15,39,68,.12);
+  overflow: hidden;
+  position: relative;
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 1fr 256px;
+  align-items: start;
+}
+
+.main {
+  padding: 32px 36px 40px 44px;
+  border-right: 1px solid var(--border);
+  min-width: 0;
+}
+
+.sidebar {
+  padding: 32px 28px 40px;
+  background: var(--bg);
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section:last-child { margin-bottom: 0; }
+
+.summary {
+  font-size: 13.5px;
+  color: var(--text-soft);
+  line-height: 1.75;
+}
+
+.refNote {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* ── Print button ── */
+.printBar {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 100;
+}
+
+.printBtn {
+  background: var(--navy);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 24px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(15,39,68,.35);
+  transition: background .2s, transform .15s;
+}
+
+.printBtn:hover {
+  background: var(--navy-mid);
+  transform: translateY(-1px);
+}
+
+/* ── Print ── */
+@media print {
+  .page {
+    max-width: 100%;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .main { padding: 20px 28px 24px 28px; }
+  .sidebar { padding: 20px 20px 24px; }
+  .printBar { display: none; }
+}
+
+/* ── Mobile ── */
+@media (max-width: 720px) {
+  .page { margin: 0; border-radius: 0; box-shadow: none; }
+
+  .body {
+    grid-template-columns: 1fr;
+  }
+
+  .main {
+    padding: 24px 20px;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .sidebar { padding: 24px 20px; }
+
+  .printBar { bottom: 16px; right: 16px; }
+}
+
+@media (max-width: 400px) {
+  .main { padding: 20px 16px; }
+  .sidebar { padding: 20px 16px; }
+}
