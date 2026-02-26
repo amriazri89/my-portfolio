@@ -39,7 +39,7 @@ export const resumeData = {
           title: "Software Engineering Intern",
           period: "Sep 2025 – Feb 2026",
           bullets: [
-            "Developed a Territory Planning App prototype using the Access Evo Development Kit (ASP.NET, React, SQL Server), delivering a functional internal tool within the internship period.",
+            "Developed a Territory Planning App prototype using the Access Evo Development Kit (ASP.NET, React, SQL Server), delivering a half-functional internal tool within the internship period.",
             "Built a fully responsive marketing homepage using Access Volcanic (Ixcanul Tools), applying Sass, media queries, and BEM methodology to meet cross-device design standards.",
           ],
         },
