@@ -100,7 +100,7 @@ export const resumeData = {
       source: "https://gitfront.io/r/amriazri89/gDerSTjthLnu/CDN-HRMS-Code/",
       stack: ["ASP.NET Core 8", "React 18", "Clean Architecture", "CQRS + MediatR", "Dapper", "FluentValidation", "AWS EC2 & RDS", "GitHub Actions CI/CD", "xUnit · Moq"],
       bullets: [
-        "Built a production-ready HRMS as a technical assessment for ETIQA IT — full stack, independently architected from design to live deployment.",
+        "Built a full stack, independently architected from design to live deployment.",
         "Implemented strict 4-layer Clean Architecture (API → Application → Domain → Infrastructure) with CQRS + MediatR, ensuring complete read/write separation and framework independence.",
         "Payroll engine with birthday bonus logic, JWT role-based auth, server-side pagination, soft delete, and pure Dapper ORM — no Entity Framework.",
         "unit and integration tests using xUnit, Moq, and FluentAssertions following the Testing Pyramid; >80% coverage on Application and Infrastructure layers.",

@@ -9,9 +9,9 @@ export default function ProjectCard({ project }) {
           {project.demo && (
             <a className={styles.link} href={project.demo} target="_blank" rel="noreferrer">Live Demo</a>
           )}
-          {project.source && (
+          {/* {project.source && (
             <a className={styles.link} href={project.source} target="_blank" rel="noreferrer">Source</a>
-          )}
+          )} */}
         </div>
       </div>
       <div className={styles.stack}>
