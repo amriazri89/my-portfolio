@@ -65,7 +65,7 @@ export const resumeData = {
           title: "Freelance Software Developer",
           subtitle: "Retained — continued while pursuing degree",
           note: "Retained part-time while pursuing degree — company lacked budget for full replacement",
-          period: "Oct 2023 – Feb 2026",
+          period: "Oct 2023 – July 2025",
           bullets: [
             "Led development of an Asset Management System (AMS) fully integrated with TMS, built as a monolithic Grails/Java web application, improving complaint traceability and work order management.",
             "Designed and implemented Schedule Management sub-modules and analytics dashboards, enabling daily, monthly, and yearly operational reporting.",
